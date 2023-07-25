@@ -7,7 +7,7 @@ import React from 'react'
   const user = await getCurrentUser()
    return (
      <div>
-        <img className='h-10 w-10 rounded-full' src={user?.image} alt='user'/>
+        <img className='h-10 w-10 rounded-full' src={user?.image!} alt='user'/>
      </div>
    )
  }
